@@ -1,0 +1,9 @@
+# Python 3.13 (probado con 3.13.5)
+numpy==2.5.4
+pandas==3.1.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+
+# Kernel para ejecutar los cuadernos (p. ej. desde VS Code).
+# Si se quiere usar Jupyter Notebook/Lab en el navegador, instalar también: pip install jupyter
+ipykernel==6.30.1
