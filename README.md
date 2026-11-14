@@ -1,19 +1,16 @@
-<<<<<<< HEAD
 # Clasificación de eventos H→ττ con el ATLAS Higgs Challenge 2014
-=======
-# ATLAS_Higgs_Machine_Learning_Challenge_2014
->>>>>>> 439b0d5c84750d7be29e88075431fd9e4073c9af
-
-Este proyecto busca distinguir los eventos de señal (desintegración del bosón de Higgs en dos leptones tau, H→ττ) de los eventos de fondo, usando los datos del **ATLAS Higgs Challenge 2014**. 
-
-Primero se estudia con un mapa autoorganizado (SOM) si las dos clases se separan de forma natural. Después se entrenan modelos supervisados (regresión logística y perceptrón multicapa, MLP) y, por último, se usa un algoritmo genético para optimizar la métrica de significancia **AMS** (*Approximate Median Significance*).
 
 - **Autora:** _Claudia García Navas_
 - **Asignatura:** Aprendizaje Automático
 - **Universidad:** Universidad Francisco de Vitoria (UFV)
 - **Curso:** 3.º de carrera, curso académico _[2026/2027]_
 
+Este proyecto busca distinguir los eventos de señal (desintegración del bosón de Higgs en dos leptones tau, H→ττ) de los eventos de fondo, usando los datos del **ATLAS Higgs Challenge 2014**. 
+
+Primero se estudia con un mapa autoorganizado (SOM) si las dos clases se separan de forma natural. Después se entrenan modelos supervisados (regresión logística y perceptrón multicapa, MLP) y, por último, se usa un algoritmo genético para optimizar la métrica de significancia **AMS** (*Approximate Median Significance*).
+
 ---
+
 
 ## 1. Dataset
 
@@ -55,7 +52,7 @@ Los datos se distribuyen bajo licencia **Creative Commons CC0** (dominio públic
 - **`KaggleWeight`:** es el peso de cada evento, normalizado dentro de su subconjunto de `KaggleSet`. Es el peso que se usa para calcular la AMS en cada partición. `Weight` es el mismo peso pero normalizado sobre el dataset completo.
 - **Valores −999:** significan **"variable no definida"**, no datos perdidos. Por ejemplo, las variables del segundo chorro (`PRI_jet_subleading_*`) valen −999 cuando el evento tiene menos de dos chorros (`PRI_jet_num` < 2). Estos eventos **no se eliminan**, porque el número de chorros está relacionado con el modo de producción del Higgs (fusión de gluones frente a fusión de bosones vectoriales, VBF).
 
----
+
 
 ## 2. Estructura del repositorio
 
@@ -71,7 +68,7 @@ Los datos se distribuyen bajo licencia **Creative Commons CC0** (dominio públic
 
 **Archivos generados (no versionados):** `Entrenamiento.csv`, `Ajuste.csv` y `Test.csv`. Los crea `1_EDA.ipynb` en la raíz del repositorio.
 
----
+
 
 ## 3. Instalación
 
@@ -96,7 +93,7 @@ Se ha usado **Python 3.13** (kernel de Jupyter con Python 3.13.5).
 
 Librerías principales y versiones que se han usado: `numpy` 2.3, `pandas` 2.3, `scikit-learn` 1.9, `matplotlib` 3.10 y `jupyter`.
 
----
+
 
 ## 4. Cómo reproducir los resultados
 
@@ -121,7 +118,7 @@ Los cuadernos se ejecutan **en orden, de 1 a 4**:
 - `4_AlgoritmoGenetico.ipynb`: _[pendiente]_.
 - **No hace falta GPU.** Todo el código usa NumPy y scikit-learn en CPU.
 
----
+
 
 ## 5. Metodología resumida
 
@@ -158,7 +155,7 @@ donde $s$ y $b$ son la suma de los pesos (`KaggleWeight`) de los eventos de señ
 - Optimización de la AMS.
 _En desarrollo_
 
----
+
 
 ## 6. Resultados
 
@@ -176,7 +173,7 @@ _En desarrollo_
 | MLP | PRI + DER | — | — | — | — |
 | MLP + algoritmo genético | PRI + DER | — | — | — | — |
 
----
+
 
 ## 7. Estado del proyecto
 
@@ -202,7 +199,7 @@ _En desarrollo_
 
 De acuerdo con la sección de uso ético de la IA de la asignatura, declaro que he usado herramientas de inteligencia artificial generativa como apoyo durante el proyecto: para resolver dudas conceptuales, revisar código erróneo y preparar visualizaciones. Todas las decisiones de diseño, el análisis de los resultados y las conclusiones son míos, y he revisado y entendido todo el código del repositorio. _[Modelo: Claude Opus 5.5 Medio]_.
 
----
+
 
 ## 9. Referencias
 
