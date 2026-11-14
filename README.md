@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Clasificación de eventos H→ττ con el ATLAS Higgs Challenge 2014
+=======
+# ATLAS_Higgs_Machine_Learning_Challenge_2014
+>>>>>>> 439b0d5c84750d7be29e88075431fd9e4073c9af
 
 Este proyecto busca distinguir los eventos de señal (desintegración del bosón de Higgs en dos leptones tau, H→ττ) de los eventos de fondo, usando los datos del **ATLAS Higgs Challenge 2014**. 
 
