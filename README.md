@@ -1,5 +1,9 @@
 # Clasificación de eventos H→ττ con el ATLAS Higgs Challenge 2014
 
+Este proyecto busca distinguir los eventos de señal (desintegración del bosón de Higgs en dos leptones tau, H→ττ) de los eventos de fondo, usando los datos del **ATLAS Higgs Challenge 2014**. 
+
+Primero se estudia con un mapa autoorganizado (SOM) si las dos clases se separan de forma natural. Después se entrenan modelos supervisados (regresión logística y perceptrón multicapa, MLP) y, por último, se usa un algoritmo genético para optimizar la métrica de significancia **AMS** (*Approximate Median Significance*).
+
 - **Autora:** _Claudia García Navas_
 - **Asignatura:** Aprendizaje Automático
 - **Universidad:** Universidad Francisco de Vitoria (UFV)
